@@ -7,6 +7,8 @@ public class PriorityQueue<TElement, TPriority>
     private readonly IComparer<TPriority> comparer;
     public int Count => queue.Count;
 
+    int j = 2;
+
     public PriorityQueue()
     {
         queue = new List<(TElement, TPriority)>();
